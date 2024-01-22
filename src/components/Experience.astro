@@ -1,0 +1,32 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+    {
+        date: 'Actualmente...',
+        title: 'Estudiante de Ciberseguridad y Freelancer',
+        description: 'Actualmente me encuentro realizando un curso sobre ciberseguridad en EducaciónIT, con vistas a estudiar la carrera de Software Engineer y paralelamente desepeñandome como freelancer.'
+    },
+    {
+        date: '2021 a 2023',
+        title: 'Encargado de Logistica en P&C Construcciones Civiles SRL',
+        description: 'Tuve una solida experiencia como encargado de la logistica, donde he demostrado habilidades efectivas en la coordinacion y optimización de procesos. Mi enfoque se centra en la eficiencia operativa y la gestion efectiva de recursos para garantizar proyecto exitoso.'
+    },
+    {
+        date: '2020',
+        title: 'Mi Inicio en la Progrmación',
+        description: 'Durante la Pandemia del 2020 empeze a interesarme en el Desarrollo Web comence cursos de programación en Udemy como . . tambien mas adelante fui aprendiendo mas lenguajes de programción como "PHP, MySQL, JavaScript, Python" así como diferentes frameworks de distintas tecnologías como "Laravel, React, Vue.Js, Node.Js, Tailwind, TypeScript, etc".'
+    }
+]
+---
+<ol class="relative border-s dark:border-gray-200 border-gray-700">    
+    {
+        EXPERIENCE.map(experience => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />
+            </li>
+        ))
+    }              
+    
+</ol>
+

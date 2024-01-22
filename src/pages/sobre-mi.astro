@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout 
+    title="Sobre Marcos"
+    description="Marcos Programador y Desarrollador Web de Misiones, Argentina +3 años de experiencia brindando soluciones innovadoras en el Mercado" >
+    <div class="my-2 mx-auto max-w-6xl min-h-full bg-white dark:bg-gray-800 border-solid rounded-lg border-x-[1px] border-gray-400" id="main-container">
+        <Header />
+        <main class="px-8">
+            <div class="pt-16 sm:pb-12 md-pb-4 lg:pb-16">
+                <div class="lg:grid lg:grid-cols-12">
+                    <div class="z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1
+                    lg:py-6 lg:bg-transparent">
+                        <div class="px-4 mx-auto max-w-xs sm:px-6 md:max-w-md lg:p-0">
+                            <img src="https://frabjous-parfait-fe72fb.netlify.app/perfil.webp" alt="Photo de Marcos" class="objet-cover objet-center w-full max-w-md rounded-3xl shadow-2xl -rotate-3 aspect-[1/1]">
+                        </div>
+                    </div>
+                        <div class="relative rounded-3xl md:grid md:grid-cols-10 md:col-span-10 md:col-start-3 md:row-start-1 md:items-center">
+                            <div class="py-12 mx-auto space-y-6 sm:py-6 sm:max-w-3xl md:col-span-7 md:col-start-4 md:max-w-none">
+                                <h2 class="text-4xl font-bold tracking-tighter sm:text-5xl">Soy Marcos, de Misiones, Argentina</h2>
+                                <p class="text-lg text-gray-800 sm:text-gray-700" >
+                                    I love programming since I was a little kid. One of my earliest memories is of the excitement I felt when I received my first computer. I spent hours playing with it.</p>
+                                <p class="text-lg text-gray-800 sm:text-gray-700">
+                                    I was fascinated by the endless possibilities of creating and building with code, and I spent hours every day learning and experimenting. I started by teaching myself basic coding languages, and before long, I was building my own simple programs and games. 
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                <section class="mx-auto max-w-5xl sm:px-6 sm:border-1 sm:border-gray-700/40">
+                    <div class="grid grid-cols-1 gap-y-8 items-baseline sm:grid-cols-4" ></div>
+                </section>
+            </div>
+        </main>
+        <Footer />
+    </div>
+
+</Layout>
