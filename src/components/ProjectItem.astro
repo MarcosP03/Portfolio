@@ -1,0 +1,32 @@
+---
+import LinkIncon from './icons/LinkIncon.astro';
+
+interface Props {
+  title: string
+  description: string
+  link?: string
+}
+
+const {title, description, link} = Astro.props;
+---
+
+<img id="image" src="https://porfolio.dev/projects/svgl.webp" alt="proyecto_1" class="objet-cover absolute inset-0 z-10 w-full max-w-full h-full max-h-full rounded-2xl aspect-[1/1]">
+            <div class="flex relative z-20 flex-col gap-2 justify-end p-4 w-full h-full">
+                <div class="inset-0 w-full h-full rounded-2xl progressive-blur"></div>
+                    <h2 class="text-2xl font-bold tracking-tight text-white tetx-shadow-name">
+                        {title}
+                    </h2>
+                    <p class="text-ellipsis text-lg line-clamp-3 text-[#e4e4e7ff] text-shadow-desc">
+                        {description}
+                    </p>
+                    <div class="flex flex-row gap-1 items-center">
+                        {
+                            link && (
+                                <LinkIncon class="w-6 h-6 hover:cursor-pointer stroke-[0.5] stroke-[#fafafaff] hover:stroke-cyan-500" />
+                                <p class="text-[#e4e4e7ff]">
+                                    {link}
+                                </p>
+                            )
+                        }
+                    </div>
+            </div>
