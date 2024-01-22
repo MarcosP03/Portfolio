@@ -9,6 +9,7 @@ import Card from '../components/Card.astro';
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Footer from '../components/Footer.astro'; 
+import Form from '../components/Form.astro';
 ---
 
 <Layout 
@@ -40,16 +41,7 @@ import Footer from '../components/Footer.astro';
 			<Experience />
 		</SectionContainer>
 		<SectionContainer>
-			<form method="POST" action="/" class="mb-6 p-6 py-5 px-4 w-full rounded-2xl border sm:px-6 border-gray-400">
-				<h2 class="flex flex-row items-center text-sm font-semibold text-black dark:text-white"><MailIcon /> <span class="ml-3 text-xl">Contacta a Marcos</span></h2>
-				<p class="mt-2 text-base dark:text-gray-400 text-gray-700">Escribeme un mensasje con cualquier consulta que tengas, estoy a tu disposicion.</p>
-				<div>
-					<input type="text" placeholder="Su Nombre" name="yourname" required class="flex-auto mt-3 px-3 w-full h-12 rounded-md border shadow-md appearance-none sm:text-sm focus:ring-4 focus:outline-none shadow-gray-800/5 border-gray-400 bg-gray-700[0.15] text-gray-600 dark:text-gray-100 dark:bg-zinc-500 placeholder:text-gray-500 dark:placeholder:text-gray-200 focus:border-accent-400 focus:ring-accent-400/10">
-					<input type="email" placeholder="Su Email" name="yourmail" required class="flex-auto mt-3 px-3 w-full h-12 rounded-md border shadow-md appearance-none sm:text-sm focus:ring-4 focus:outline-none shadow-gray-800/5 border-gray-400 bg-gray-700[0.15] text-gray-600 dark:text-gray-100 dark:bg-zinc-500 placeholder:text-gray-500 dark:placeholder:text-gray-200 focus:border-accent-400 focus:ring-accent-400/10">
-					<textarea required name="mensaje" placeholder="Tu Mensaje..." rows="4" class="p-3 w-full mt-3 rounded-md border shadow-md appearance-none sm:text-sm focus:ring-4 focus:otuline-none border-gray-400 bg-gray-700[0.15] dark:bg-zinc-500 text-gray-600 dark:text-gray-100 dark:placeholder:text-gray-200 focus:border-accent-400/10"></textarea>
-					<button class="flex-none w-full mt-3 py-2 px-3 text-sm font-semibold rounded-md transition active:transition-none outline-offset-2 text-gray-100 bg-gray-700 hover:bg-gray-600 placeholder:text-gray-500 dark:placeholder:text-gray-300 active:bg-gray-700 active:text-gray-100/70" type="submit"><font class="vertical-align">Enviar</font></button>
-				</div>
-			</form>
+			<Form />
 		</SectionContainer>
 	</main>
 	<Footer />
